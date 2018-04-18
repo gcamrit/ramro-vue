@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  export default {
-    name: "add-contact"
-  }
+export default {
+  name: 'AddContact',
+};
 </script>

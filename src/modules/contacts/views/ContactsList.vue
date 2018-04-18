@@ -3,7 +3,7 @@
 </template>
 <script>
 export default {
-  name: "contacts-list",
+  name: 'ContactList',
   created() {},
 };
 </script>
