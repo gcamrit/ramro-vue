@@ -1,21 +1,15 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Home from './views/Home.vue'
-import About from './views/About.vue'
+import Vue from "vue";
+import Router from "vue-router";
+import Modules from './modules';
 
-Vue.use(Router)
+Vue.use(Router);
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Home
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: About
-    }
-  ]
-})
+const router = new Router({
+  mode: 'history',
+});
+
+Modules.forEach((module) => {
+  router.addRoutes(module.getRoutes());
+});
+
+export default router;
