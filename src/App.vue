@@ -1,10 +1,18 @@
-<script src="../../../gitlab/lekhajokha-frontend/src/router.js"></script>
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div class="font-sans font-normal text-black leading-normal bg-grey-lightest">
+    <TopBar/>
+    <div class="container mx-auto mt-6">
+      <router-view/>
     </div>
-    <router-view/>
   </div>
 </template>
+<script>
+  import TopBar from './layouts/TopBar';
+
+  export default {
+    name: 'VueApp',
+    components: {
+      TopBar,
+    },
+  };
+</script>
