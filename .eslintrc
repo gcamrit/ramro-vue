@@ -3,5 +3,8 @@
   "extends": [
     "plugin:vue/essential",
     "@vue/airbnb"
-  ]
+  ],
+  "rules": {
+    "vue/order-in-components": "error"
+  }
 }

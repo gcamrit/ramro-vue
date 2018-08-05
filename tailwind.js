@@ -37,7 +37,7 @@ View the full documentation at https://tailwindcss.com.
 | for prototyping, but don't hesitate to change them for your project. You
 | own these colors, nothing will break if you change everything about them.
 |
-| We've used literal color names ("red", "blue", etc.) for the default
+| We've used literal color names ("red", "primary", etc.) for the default
 | palette, but if you'd rather use functional names like "primary" and
 | "secondary", or even a numeric scale like "100" and "200", go for it.
 |
@@ -45,9 +45,9 @@ View the full documentation at https://tailwindcss.com.
 
 let colors = {
   'transparent': 'transparent',
-
   'current': 'inherit',
   'black': '#22292f',
+
   'grey-darkest': '#3d4852',
   'grey-darker': '#606f7b',
   'grey-dark': '#8795a1',
@@ -56,22 +56,6 @@ let colors = {
   'grey-lighter': '#f1f5f8',
   'grey-lightest': '#f8fafc',
   'white': '#ffffff',
-
-  'red-darkest': '#3b0d0c',
-  'red-darker': '#621b18',
-  'red-dark': '#cc1f1a',
-  'red': '#e3342f',
-  'red-light': '#ef5753',
-  'red-lighter': '#f9acaa',
-  'red-lightest': '#fcebea',
-
-  'orange-darkest': '#462a16',
-  'orange-darker': '#613b1f',
-  'orange-dark': '#de751f',
-  'orange': '#f6993f',
-  'orange-light': '#faad63',
-  'orange-lighter': '#fcd9b6',
-  'orange-lightest': '#fff5eb',
 
   'yellow-darkest': '#453411',
   'yellow-darker': '#684f1d',
@@ -89,45 +73,22 @@ let colors = {
   'green-lighter': '#a2f5bf',
   'green-lightest': '#e3fcec',
 
-  'teal-darkest': '#0d3331',
-  'teal-darker': '#20504f',
-  'teal-dark': '#38a89d',
-  'teal': '#4dc0b5',
-  'teal-light': '#64d5ca',
-  'teal-lighter': '#a0f0ed',
-  'teal-lightest': '#e8fffe',
+  'primary-darkest': '#12283a',
+  'primary-darker': '#1c3d5a',
+  'primary-dark': '#2779bd',
+  'primary': '#3490dc',
+  'primary-light': '#6cb2eb',
+  'primary-lighter': '#bcdefa',
+  'primary-lightest': '#eff8ff',
 
-  'blue-darkest': '#12283a',
-  'blue-darker': '#1c3d5a',
-  'blue-dark': '#2779bd',
-  'blue': '#3490dc',
-  'blue-light': '#6cb2eb',
-  'blue-lighter': '#bcdefa',
-  'blue-lightest': '#eff8ff',
+  'red-darkest': '#3b0d0c',
+  'red-darker': '#621b18',
+  'red-dark': '#cc1f1a',
+  'red': '#e3342f',
+  'red-light': '#ef5753',
+  'red-lighter': '#f9acaa',
+  'red-lightest': '#fcebea',
 
-  'indigo-darkest': '#191e38',
-  'indigo-darker': '#2f365f',
-  'indigo-dark': '#5661b3',
-  'indigo': '#6574cd',
-  'indigo-light': '#7886d7',
-  'indigo-lighter': '#b2b7ff',
-  'indigo-lightest': '#e6e8ff',
-
-  'purple-darkest': '#21183c',
-  'purple-darker': '#382b5f',
-  'purple-dark': '#794acf',
-  'purple': '#9561e2',
-  'purple-light': '#a779e9',
-  'purple-lighter': '#d6bbfc',
-  'purple-lightest': '#f3ebff',
-
-  'pink-darkest': '#451225',
-  'pink-darker': '#6f213f',
-  'pink-dark': '#eb5286',
-  'pink': '#f66d9b',
-  'pink-light': '#fa7ea8',
-  'pink-lighter': '#ffbbca',
-  'pink-lightest': '#ffebef',
 }
 
 module.exports = {
@@ -553,6 +514,7 @@ module.exports = {
 
   minWidth: {
     '0': '0',
+    '88': '88px',
     'full': '100%',
   },
 
@@ -573,8 +535,9 @@ module.exports = {
 
   minHeight: {
     '0': '0',
+    '36': '36px',
     'full': '100%',
-    'screen': '100vh'
+    'screen': '100vh',
   },
 
 
@@ -726,6 +689,7 @@ module.exports = {
   */
 
   shadows: {
+    'sm': '0 1px 2px 0 rgba(0,0,0,0.10)',
     default: '0 2px 4px 0 rgba(0,0,0,0.10)',
     'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
     'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
