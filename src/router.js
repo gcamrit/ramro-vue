@@ -6,7 +6,7 @@ Vue.use(Router);
 
 const router = new Router({
   mode: 'history',
-  linkActiveClass: 'text-yellow-dark border-b-2 border-yellow-dark opacity-100',
+  linkActiveClass: 'text-primary border-b-2 border-primary opacity-100',
 });
 
 Modules.forEach((module) => {

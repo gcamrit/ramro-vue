@@ -1,6 +1,6 @@
 <template>
 <button :class="[defaultClasses, getClasses]" @click="$emit('click')">
-  <slot></slot>
+  <slot/>
 </button>
 </template>
 <script>
@@ -21,7 +21,7 @@ export default {
       defaultClasses: [
         'appearance-none',
         'rounded',
-        'block text-white text-sm shadow-border py-3 px-4 font-sans tracking-wide uppercase font-bold',
+        'block text-white text-sm shadow-border py-3 px-4 font-sans tracking-wide font-medium',
       ],
     };
   },

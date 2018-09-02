@@ -5,6 +5,10 @@
     "@vue/airbnb"
   ],
   "rules": {
-    "vue/order-in-components": "error"
+    "vue/order-in-components": "error",
+    "vue/html-end-tags": "error",
+    "vue/html-self-closing": "error",
+    "vue/require-prop-types": "error",
+    "vue/attributes-order": "error"
   }
 }

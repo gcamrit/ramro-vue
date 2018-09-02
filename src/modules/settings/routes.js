@@ -4,7 +4,7 @@ export default [
   {
     path: '/settings',
     component: Contacts,
-    name: 'contact.list',
+    name: 'setting.index',
     meta: { requiresAuth: true },
   },
 ];

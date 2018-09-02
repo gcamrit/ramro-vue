@@ -7,12 +7,14 @@ export default [
     component: Contacts,
     name: 'contact.list',
     meta: { requiresAuth: true },
-  },
-  {
-    path: '/contacts/add',
-    name: 'contact.add',
-    component: AddContact,
-    meta: { requiresAuth: true },
+    children: [
+      {
+        path: 'add',
+        name: 'contact.add',
+        component: AddContact,
+        meta: { requiresAuth: true },
+      },
+    ],
   },
   {
     path: '/contacts/:id',
